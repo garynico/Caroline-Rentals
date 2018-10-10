@@ -14,6 +14,21 @@ function validate()
     }
     if(document.myForm.password.value.length <= 3) {
         error.innerHTML = "Password must be longer than 3 characters";
+        return false;               
+    }
+
+     if(document.myForm.name.value == "") {
+        error.innerHTML = "Name must be filled";
+        return false;
+    }
+
+    if(document.myForm.city.value == "") {
+        error.innerHTML = "City must be filled";
+        return false;
+    }
+
+     if(document.myForm.adress.value == "") {
+        error.innerHTML = "Adress must be filled";
         return false;
     }
     

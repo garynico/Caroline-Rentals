@@ -29,8 +29,8 @@
     </button>
     <div class="dropdown-content">
       <a href="product.html">Family Car</a>
-      <a href="#">Commercial Car</a>
-      <a href="#">Luxury Car</a>
+      <a href="comercial.html">Commercial Car</a>
+      <a href="luxury.html">Luxury Car</a>
     </div>
   </div> 
   <a href="contact.html">Contact</a>
@@ -55,7 +55,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 70%;
+        height: 100%;
         align-items: center;
     
     }
@@ -71,19 +71,35 @@
 
     <form action="" method="POST" onsubmit="return validate()" name="myForm">
 
-        <h1> Login </h1> <br>
+        <h1> Register </h1> <br>
 
-        <label for="email">EMAIL</label> <br>
-        <input type="text" class="email" name="email">
+        <label for="name">Name: </label> <br>
+        <input type="text" class="name" name="name">
         <br>
-        <label for="password">PASSWORD</label> <br>
-        <input type="password" class="password" name="password">
+        <label for="email">Email</label> <br>
+        <input type="email" class="email" name="email">
+        <br>
+
+        <label for="gender">Gender: </label> <br>
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label for="city">City: </label> <br>
+        <select>
+           <option value="jakarta">Jakarta</option>
+           <option value="bandung">Bandung</option>
+           <option value="surayaba">Surabaya</option>
+           <option value="tangerang">Tangerang</option>
+        </select>
+
+        <br>
+        <label for="adress">Adress: </label> <br>
+        <input type="adress" class="adress" name="adress">
+        <br>
         
         <span id="error-msg"></span>
         <br>
-        <input type="submit" value="Login">
-        <br>
-        <p1> Don't have an account? <span>  <a href="register.html">Register here!</a></span> </p1>  
+        <input type="submit" value="Register">
 
     </form>
 

@@ -167,3 +167,27 @@
   align-items: center; 
 }
 
+.family{
+  font-family: helvetica;
+  align-content: center;
+}
+
+table{
+  width: 70%;
+}
+
+table, th, td {
+  align-content: center;
+  font-family: helvetica;
+  font-style: bold;
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 70%;
+
+}
+th, td {
+   font-family: helvetica;
+  font-style: bold;
+    padding: 5px;
+    text-align: left;    
+}
